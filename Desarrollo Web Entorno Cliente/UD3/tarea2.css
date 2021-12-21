@@ -1,0 +1,119 @@
+/* Reset básico a todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera del documento */
+.title {
+    margin-top: 2em;
+    padding: 0.5em;
+    background: black;
+    color: whitesmoke;
+}
+
+/*  Cuerpo del documento*/
+.body {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(90, 155, 240);
+}
+
+/* Sección principal */
+.main {
+    margin: 2em;
+    padding: 1em;
+    background: rgb(201, 183, 137);
+}
+
+.info-main,
+.button-num {
+    font-weight: bold;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.button-num:active {
+    background: #feffb3;
+}
+
+/* Sección resultado */
+.result {
+    background-color: whitesmoke;
+    width: 30em;
+}
+
+.title-result {
+    text-align: center;
+    font: bold 1.5rem Verdana, serif;
+}
+
+.request {
+    padding: 1.2em;
+    text-align: center;
+    font: bold 1.2em Arial;
+    font-weight: bold;
+}
+
+.request-true {
+    background-color: rgb(177, 223, 108);
+}
+
+.request-false {
+    background-color: rgb(226, 128, 124);
+}
+
+/* Pie de página */
+.footer {
+    bottom: 0;
+    padding: 2em 8em;
+    background: rgb(36, 33, 27);
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+/* Burbujas animadas de fondo */
+.bubble {
+    position: absolute;
+    bottom: 80px;
+    animation: move-bubble 10s infinite linear;
+    z-index: -10;
+}
+
+.bubble img {
+    content: url(./burbuja.png);
+    position: absolute;
+    height: 80px;
+}
+
+.bubble p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font: bold 1.5rem Georgia, serif;
+}
+
+@keyframes move-bubble {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+/* Estilos comunes usados en secciones y cabecera */
+.shadow-border {
+    box-shadow: 5px 5px 19px 4px rgba(0, 0, 0, 0.46);
+    border-radius: 2em;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
