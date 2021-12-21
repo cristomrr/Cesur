@@ -34,9 +34,7 @@
     margin: 0.5em;
 }
 
-.button-num:active {
-    background: #feffb3;
-}
+.button-num:active { background: #feffb3; }
 
 /* Sección resultado */
 .result {
@@ -71,9 +69,7 @@
     background: rgb(36, 33, 27);
 }
 
-.footer p {
-    color: whitesmoke;
-}
+.footer p { color: whitesmoke; }
 
 /* Burbujas animadas de fondo */
 .bubble {
@@ -97,12 +93,8 @@
 }
 
 @keyframes move-bubble {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-100vh);
-    }
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
 }
 
 /* Estilos comunes usados en secciones y cabecera */
