@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Creación formulario</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Creación formulario</title>
+    </head>
+
+    <body class="body">
+
+        <header class="header">
+            <img src="./cesur.png" alt="Logo Cesur">
+            <h1 class="titulo-pag">Tarea 1 de UD6 para Entornos de servidor 2ºDAW</h1>
+        </header>
+
+        <main class="main">
+
+            <section class="seccion-form">
+                <form class="form-ud6" action="main.php" method="post">
+                    <fieldset class="field-ud6">
+                        <legend class="titulo-f">Formulario UD6 Servidores</legend>
+                        <div class="input-caja-f">
+                            <input class="input-f" type="text" id="fcalle" name="calle" value="" required>
+                            <label class="label-f" for="fcalle">
+                                <div class="title-input-f">Calle</div>
+                            </label>
+                        </div>
+                        <div class="input-caja-f">
+                            <input class="input-f" type="text" id="fnumero" name="numero" value="" maxlength="3"
+                                required pattern="[0-9]">
+                            <label class="label-f" for="fnumero">
+                                <div class="title-input-f">Número</div>
+                            </label>
+                        </div>
+                        <div class="input-caja-f">
+                            <input class="input-f" type="text" id="fpoblacion" name="poblacion" value="" required>
+                            <label class="label-f" for="fpoblacion">
+                                <div class="title-input-f">Población</div>
+                            </label>
+                        </div>
+                        <div class="input-caja-f">
+                            <input class="input-f" type="text" id="fpais" name="pais" value="" required>
+                            <label class="label-f" for="fpais">
+                                <div class="title-input-f">País</div>
+                            </label>
+                        </div>
+                        <input type="submit" class="submit-f" value="Enviar datos al servidor">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="seccion-aviso ocultar">
+                <div class="ventana-aviso">
+                    <p class="aviso">¿ Los datos introducidos son correctos ?</p>
+                    <div class="datos-aviso"></div>
+                    <div class="botones-aviso">
+                        <input type="button" class="a-confirmar" value="Confirmar">
+                        <input type="button" class="a-cancelar" value="Cancelar">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="autor">Copyright &copy; 2021 Cristo Manuel Rodríguez Rodríguez, todos los derechos reservados</p>
+        </footer>
+
+    </body>
+
 </html>

@@ -4,7 +4,9 @@ class Dado
 {
     private int $minNumDado;
     private int $maxNumDado;
-
+/**
+ * 
+ */
     function __construct(int $min, int $max)
     {
         $this->minNumDado = $min;

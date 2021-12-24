@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body,
+.header,
+.form-ud6 > fieldset,
+.seccion-form,
+.footer,
+.seccion-aviso,
+.ventana-aviso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Cabecera del documento */
+.header > img {
+  width: 100vw;
+  max-width: 50em;
+}
+
+.titulo-pag,
+.titulo-f {
+  text-align: center;
+  font: bold 1.7rem "Fredericka the Great", Arial, serif;
+  color: #194379;
+  padding: 0.5em;
+}
+
+/* Cuerpo del documento */
+.seccion-form {
+  margin: 2em;
+}
+
+.form-ud6 > fieldset {
+  background-color: #8eaaaa;
+  box-shadow: 5px 12px 25px 3px #0000008c;
+}
+
+.input-caja-f {
+  position: relative;
+  margin: 1em;
+}
+
+.input-f {
+  min-width: 18em;
+  border: none;
+  border-bottom: 0.1rem solid #000;
+  font: 1em Arial, serif;
+  padding: 0.8em;
+}
+
+.label-f {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  pointer-events: none;
+  transition: transform 0.35s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+}
+
+.input-caja-f > input:focus {
+  border: 0.1rem solid #000;
+}
+
+.input-f:focus + .label-f,
+:not(.input-f[value=""]) + .label-f {
+  font: 0.8em Arial, serif;
+  color: darkblue;
+  transform: translate(0, -50%);
+}
+
+.title-input-f {
+  background-color: #fff;
+  padding: 0 0.2rem;
+}
+
+.submit-f {
+  padding: 0.8em;
+  margin: 1em;
+  font: 0.8em Arial, serif;
+  box-shadow: 2px 2px 10px #0000008c;
+}
+
+/* Pie de página */
+.footer {
+  width: 100vw;
+  background-color: #869c9c;
+  height: 6em;
+}
+
+.autor {
+  font: 0.8em Arial, serif;
+  margin: 1em;
+}
+
+/* Ventana aviso para confirmar datos antes del envío */
+.seccion-aviso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000000b3;
+}
+
+.ventana-aviso {
+  background-color: #fff;
+  height: 20em;
+  width: 25em;
+  justify-content: space-around;
+}
+
+.a-confirmar,
+.a-cancelar {
+  padding: 0.6em 3em;
+}
+
+.aviso {
+  font: bold 1rem "Fredericka the Great", Arial, serif;
+  margin: 1em;
+}
+
+.a-confirmar {
+  background-color: #abe0ab;
+}
+
+.a-cancelar {
+  background-color: #e9b3b3;
+}
+
+.ocultar {
+  display: none;
+}
