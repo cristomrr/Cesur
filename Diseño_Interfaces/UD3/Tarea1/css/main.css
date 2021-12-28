@@ -90,8 +90,8 @@
 
 .menu-principal-opciones > a:hover {
     background-color: #FFCE0072;
-    border: solid red 1px;
-    color: black;
+    border: solid #FF0000FF 1px;
+    color: #000000;
 }
 
 .logo > img {
@@ -179,7 +179,7 @@
 
 .musica-mp3, .img-album > img {
     box-shadow: 5px 9px 15px 2px #00000099;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 20%;
     background-color: #ececec;
 }
@@ -225,7 +225,7 @@ h2 {
 #seccion-cantantes > img {
     height: 12em;
     box-shadow: 5px 9px 15px 2px #00000099;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 20%;
     background-color: #ececec;
 }
@@ -248,7 +248,7 @@ h2 {
 }
 
 .pie-pagina {
-    background-color: black;
+    background-color: #000000;
     color: #ececec;
     font: 1em var(--fuente-principal);
     text-align: center;
