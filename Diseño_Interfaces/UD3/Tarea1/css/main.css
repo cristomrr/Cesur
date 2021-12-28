@@ -3,19 +3,24 @@
 
 :root {
     --fondo-barra-contacto-sup: #000000E2;
-    --fondo-barra-menu-principal: #00000077;
+    --fondo-barra-menu-principal: #000000;
     --altura-menu-principal: 6em;
     --color-texto-header: #ececec;
+    --color-fondo-documento: #c4c4c4;
     --fuente-principal: bold 1rem "Arial", serif;
     --fuente-textos-decorativos: 'Moon Dance', cursive;
     --fuente-titulos: bold 5em 'Fredericka the Great', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .body {
     min-width: 1200px;
 }
 
-/* ESTILOS COMUNES */
+/* ESTILOS COMUNES **********************************************************/
 .flex-colum {
     display: flex;
     flex-direction: column;
@@ -28,7 +33,17 @@
     justify-content: space-between;
 }
 
-/************* HEADER *******************/
+h2 {
+    text-align: center;
+    font: var(--fuente-titulos);
+    text-shadow: 2px 2px 2px #A4000077;
+}
+
+.texto-info {
+    padding: 2em;
+}
+
+/************* HEADER *******************************************************/
 .cabecera-pagina {
     position: relative;
     background: url("../img/otros/barnner.jpg") no-repeat;
@@ -37,7 +52,7 @@
     min-width: 1200px;
 }
 
-/* menu contacto */
+/* Menú contacto ************************************************************/
 .barra-contacto-sup {
     background-color: var(--fondo-barra-contacto-sup);
 }
@@ -61,11 +76,14 @@
     filter: invert(100%) sepia(50%) saturate(1500%) brightness(120%);
 }
 
-/* menu principal navegación */
+/* menu principal navegación ************************************************/
 .menu-principal {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     height: var(--altura-menu-principal);
     background-color: var(--fondo-barra-menu-principal);
-    padding: 0 5em;
+    padding: 1em 5em;
 }
 
 .logo:hover {
@@ -98,7 +116,15 @@
     height: var(--altura-menu-principal);
 }
 
-/* texto header animado */
+/* Título página **************************************************************/
+.titulo-principal {
+    font: var(--fuente-titulos);
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+    padding: 1em;
+}
+
+/* texto header animado *******************************************************/
 .info-header {
     position: absolute;
     bottom: 20%;
@@ -128,9 +154,9 @@
     }
 }
 
-/********** MAIN) ********************/
+/********** MAIN) ************************************************************/
 .contenido-principal {
-    background-color: #c4c4c4;
+    background-color: var(--color-fondo-documento);
     align-items: center;
 }
 
@@ -138,7 +164,7 @@
     margin: 1em 0;
 }
 
-/* SECCIÓN ALBUNES */
+/* SECCIÓN ALBUNES ***********************************************************/
 
 .disco-album, .disco-album > div {
     height: 20em;
@@ -199,7 +225,7 @@
     margin: 1em;
 }
 
-/* SECCIÓN CONCIERTOS - MAPA */
+/* SECCIÓN CONCIERTOS - MAPA **************************************************/
 #mapa-conciertos {
     position: relative;
     justify-content: center;
@@ -215,27 +241,31 @@
     left: 43%;
 }
 
-/* SECCIÓN CANTANTES */
-h2 {
-    text-align: center;
-    font: var(--fuente-titulos);
-    text-shadow: 2px 2px 2px #A4000077;
-}
-
+/* SECCIÓN CANTANTES ***********************************************************/
 #seccion-cantantes > img {
-    height: 12em;
+    margin: 0.5em;
+    height: 10em;
     box-shadow: 5px 9px 15px 2px #00000099;
     border: 1px solid #000000;
     border-radius: 20%;
     background-color: #ececec;
 }
 
-/* SECCION CONTACTO */
-.form-cotacto {
-    width: 70em;
+.nombre-cantante {
+    text-align: center;
 }
 
-.datos-form > input {
+.info-oculto {
+    display: none;
+}
+
+/* SECCION CONTACTO ************************************************************/
+.form-cotacto {
+    width: 70em;
+    padding-bottom: 2em;
+}
+
+.datos-form > input:not(input[type="submit"]) {
     padding: 0.6em;
     margin: 0.8em;
     width: 30em;
@@ -247,6 +277,13 @@ h2 {
     font: var(--fuente-principal);
 }
 
+.submit-form-contacto {
+    width: 10em;
+    margin: 1em 1em;
+    padding: 1em;
+}
+
+/* FOOTER ***********************************************************************/
 .pie-pagina {
     background-color: #000000;
     color: #ececec;
