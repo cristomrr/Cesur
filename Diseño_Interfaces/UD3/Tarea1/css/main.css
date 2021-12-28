@@ -57,14 +57,11 @@ h2 {
     background-color: var(--fondo-barra-contacto-sup);
 }
 
-.caja-contacto > p {
+.caja-contacto > a {
     color: var(--color-texto-header);
     font: var(--fuente-principal);
+    text-decoration: none;
     padding: 0 2em;
-}
-
-.titulo-contacto {
-    font-weight: bold;
 }
 
 .redes-sociales-sup > a > img {
