@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Creación formulario</title>
 </head>
+
 <body class="body">
 <header class="header">
     <img src="./cesur.png" alt="Logo Cesur">
@@ -38,4 +40,5 @@
     <p class="autor">Copyright &copy; 2021 Cristo Manuel Rodríguez Rodríguez, todos los derechos reservados</p>
 </footer>
 </body>
+
 </html>

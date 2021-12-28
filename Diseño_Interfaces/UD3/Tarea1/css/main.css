@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Pushster&display=swap');
+
+:root {
+    --fondo-barra-contacto-sup: #000000E2;
+    --fondo-barra-menu-principal: #00000077;
+    --altura-menu-principal: 6em;
+    --color-texto-header: #ececec;
+    --fuente-principal: bold 1rem "Arial", serif;
+    --fuente-textos-decorativos: 'Moon Dance', cursive;
+    --fuente-titulos: bold 5em 'Fredericka the Great', cursive;
+}
+
+.body {
+    min-width: 1200px;
+}
+
+/* ESTILOS COMUNES */
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/************* HEADER *******************/
+.cabecera-pagina {
+    position: relative;
+    background: url("../img/otros/barnner.jpg") no-repeat;
+    background-size: cover;
+    height: 50em;
+    min-width: 1200px;
+}
+
+/* menu contacto */
+.barra-contacto-sup {
+    background-color: var(--fondo-barra-contacto-sup);
+}
+
+.caja-contacto > p {
+    color: var(--color-texto-header);
+    font: var(--fuente-principal);
+    padding: 0 2em;
+}
+
+.titulo-contacto {
+    font-weight: bold;
+}
+
+.redes-sociales-sup > a > img {
+    filter: invert(50%);
+    height: 5em;
+}
+
+.redes-sociales-sup > a > img:hover {
+    filter: invert(100%) sepia(50%) saturate(1500%) brightness(120%);
+}
+
+/* menu principal navegación */
+.menu-principal {
+    height: var(--altura-menu-principal);
+    background-color: var(--fondo-barra-menu-principal);
+    padding: 0 5em;
+}
+
+.logo:hover {
+    filter: invert(100%) sepia(100%) saturate(1500%) brightness(120%);
+    transform: scale(2.5);
+    transition: all .4s ease-in-out;
+}
+
+.menu-principal-opciones {
+    width: 50vw;
+    min-width: 40em;
+}
+
+.menu-principal-opciones > a {
+    padding: 1em;
+    background-color: var(--fondo-barra-contacto-sup);
+    border-radius: 20%;
+    text-decoration: none;
+    color: var(--color-texto-header);
+    font: var(--fuente-principal)
+}
+
+.menu-principal-opciones > a:hover {
+    background-color: #FFCE0072;
+    border: solid red 1px;
+    color: black;
+}
+
+.logo > img {
+    height: var(--altura-menu-principal);
+}
+
+/* texto header animado */
+.info-header {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.info-animado {
+    margin: 0.2em;
+    color: var(--color-texto-header);
+    font: 3em var(--fuente-textos-decorativos);
+    text-shadow: 2px 2px 4px rgba(164, 0, 0, 0.62);
+    animation: anima-info 8s ease-in-out infinite;
+}
+
+@keyframes anima-info {
+    0% {
+        transform: translateX(-1000px);
+    }
+    25% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+
+/********** MAIN) ********************/
+.contenido-principal {
+    background-color: #c4c4c4;
+    align-items: center;
+}
+
+.contenido-principal > section {
+    margin: 1em 0;
+}
+
+/* SECCIÓN ALBUNES */
+
+.disco-album, .disco-album > div {
+    height: 20em;
+}
+
+.disco-album {
+    position: relative;
+    width: 25em;
+    padding: 5em;
+}
+
+.disco-album > div {
+    width: 20em;
+    background-size: contain;
+    position: absolute;
+    filter: drop-shadow(0 0 0.75rem #E1181893);
+}
+
+.album {
+    background: url("../img/discos/highway_to_hell.jpg") no-repeat;
+}
+
+.disco {
+    background: url("../img/otros/disco.png") no-repeat;
+    left: 15em;
+    animation: girar-disco 4s linear infinite;
+}
+
+.animar-disco {
+    animation: girar-disco 4s linear infinite;
+}
+
+@keyframes girar-disco {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.musica-mp3, .img-album > img {
+    box-shadow: 5px 9px 15px 2px #00000099;
+    border: 1px solid black;
+    border-radius: 20%;
+    background-color: #ececec;
+}
+
+.musica-mp3 {
+    width: 30em;
+    margin: 1em 1em;
+}
+
+.musica-mp3 > p {
+    font: var(--fuente-principal);
+    padding: 0 1em;
+}
+
+.img-album > img {
+    height: 10em;
+    margin: 1em;
+}
+
+/* SECCIÓN CONCIERTOS - MAPA */
+#mapa-conciertos {
+    position: relative;
+    justify-content: center;
+}
+
+#mapa-conciertos > :nth-child(2n) {
+    width: 70em;
+}
+
+#mapa-conciertos > :nth-child(3n) {
+    position: absolute;
+    top: 54%;
+    left: 43%;
+}
+
+/* SECCIÓN CANTANTES */
+h2 {
+    text-align: center;
+    font: var(--fuente-titulos);
+    text-shadow: 2px 2px 2px #A4000077;
+}
+
+#seccion-cantantes > img {
+    height: 12em;
+    box-shadow: 5px 9px 15px 2px #00000099;
+    border: 1px solid black;
+    border-radius: 20%;
+    background-color: #ececec;
+}
+
+/* SECCION CONTACTO */
+.form-cotacto {
+    width: 70em;
+}
+
+.datos-form > input {
+    padding: 0.6em;
+    margin: 0.8em;
+    width: 30em;
+}
+
+.datos-form > label,
+.textarea-form > label,
+.submit-form-contacto {
+    font: var(--fuente-principal);
+}
+
+.pie-pagina {
+    background-color: black;
+    color: #ececec;
+    font: 1em var(--fuente-principal);
+    text-align: center;
+}
+

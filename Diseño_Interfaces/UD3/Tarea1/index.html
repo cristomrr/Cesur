@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js" defer></script>
+    <title>Web Musical UD3 Tarea1</title>
+</head>
+<body class="body flex-colum">
+
+<header id="header" class="cabecera-pagina flex-colum">
+    <div class="menu-sup">
+        <div class="barra-contacto-sup flex-row">
+            <div class="caja-contacto flex-row">
+                <p class="telefono"><span class="titulo-contacto">Teléfono:  </span>922 88 88 88</p>
+                <p class="email"><span class="titulo-contacto">Email:  </span>cmrrmusicsites@mail.es</p>
+            </div>
+            <div class="redes-sociales-sup flex-row">
+                <a href="https://es-es.facebook.com/acdc" target="_blank" class="icon-facebook">
+                    <img src="./img/iconos/facebook.svg" alt="enlace a facebook">
+                </a>
+                <a href="https://twitter.com/acdc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                   target="_blank"
+                   class="icon-twitter">
+                    <img src="./img/iconos/twitter.svg" alt="enlace a twitter">
+                </a>
+            </div>
+        </div>
+
+        <nav class="menu-principal flex-row">
+            <a href="#header" class="logo"><img src="./img/otros/logo.png" alt="logo del grupo"></a>
+            <div class="menu-principal-opciones flex-row">
+                <a href="#seccion-musica-album" class="menu-principal-opcion1">Discos</a>
+                <a href="#mapa-conciertos" class="menu-principal-opcion2">Conciertos</a>
+                <a href="#seccion-cantantes" class="menu-principal-opcion4">¿Quienes somos?</a>
+                <a href="#contacto" class="menu-principal-opcion4">Contacto</a>
+            </div>
+        </nav>
+
+        <div class="info-header flex-colum">
+            <p class="info-animado"></p>
+            <p class="info-animado"></p>
+        </div>
+    </div>
+
+
+</header>
+
+<main class="contenido-principal flex-colum">
+
+    <section id="seccion-musica-album" class="flex-colum">
+        <h2 class="titulo-seccion-album">Músicas de muestra</h2>
+        <div class="contenido-album flex-row">
+            <div class="disco-album">
+                <div class="disco"></div>
+                <div class="album"></div>
+            </div>
+            <div class="musica-album flex-colum">
+                <div class="musica-mp3 flex-row"><p>«Highway to Hell»</p>
+                    <p>3:30</p></div>
+                <div class="musica-mp3 flex-row"><p>«Girls Got Rhythm»</p>
+                    <p>3:26</p></div>
+                <div class="musica-mp3 flex-row"><p>«Walk All Over You»</p>
+                    <p>5:12</p></div>
+                <div class="musica-mp3 flex-row"><p>«Touch Too Much»</p>
+                    <p>6:34</p></div>
+                <div class="musica-mp3 flex-row"><p>«Beating Around the Bush»</p>
+                    <p>4:00</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-youtube">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/c4UGLm2QjC8"></iframe>
+    </section>
+
+    <h2 class="titulo-seccion-album">Discos disponibles</h2>
+    <section class="seccion-album flex-row">
+        <div class="img-album"><img src="./img/discos/acdc_live.jpg" alt="Disco ACDC Live"></div>
+        <div class="img-album"><img src="./img/discos/black_in_black.jpg" alt="Disco Black in black"></div>
+        <div class="img-album"><img src="./img/discos/highway_to_hell.jpg" alt="Disco Highway to hell"></div>
+        <div class="img-album"><img src="./img/discos/ironman2.jpg" alt="Disco Ironman2"></div>
+        <div class="img-album"><img src="./img/discos/power_up.jpg" alt="Disco Power up"></div>
+        <div class="img-album"><img src="./img/discos/Whomadewho.jpg" alt="Disco Who"></div>
+    </section>
+
+    <section id="mapa-conciertos">
+        <h2 class="mapa-info">Próximos conciertos en España</h2>
+        <img src="./img/otros/map.png" alt="Enlace a próximo concierto">
+        <img src="./img/otros/map-marker.png" alt="Enlace a próximo concierto">
+
+    </section>
+
+    <section id="seccion-cantantes">
+        <h2 class="titulo-seccion-cantantes">Componentes del grupo</h2>
+        <img src="./img/personas/Brian_Johnson.jpg" alt="Cantante del grupo">
+        <img src="./img/personas/Dave_Evans.jpg" alt="Cantante del grupo">
+        <img src="./img/personas/Malcolm_Young.jpg" alt="Cantante del grupo">
+        <img src="./img/personas/PhilRudd.JPG" alt="Cantante del grupo">
+        <img src="./img/personas/AngusYoung.jfif" alt="Cantante del grupo">
+        <img src="./img/personas/CliffWilliams.jfif" alt="Cantante del grupo">
+    </section>
+
+    <section id="contacto">
+        <h2 class="titulo-seccion-cantantes">Contacto</h2>
+        <form class="form-cotacto" action="main.php" method="post">
+            <fieldset class="flex-row">
+                <div class="datos-form flex-colum">
+                    <label for="fnombre">Nombre: </label>
+                    <input type="text" name="nombre" id="fnombre">
+                    <label for="fapellidos">Apellidos: </label>
+                    <input type="text" name="apellidos" id="fapellidos">
+                    <label for="ftelefono">Teléfono: </label>
+                    <input type="text" name="telefono" id="ftelefono">
+                    <input class="submit-form-contacto" type="submit" value="Enviar datos">
+                </div>
+                <div class="textarea-form flex-colum">
+                    <label for="ftextarea">Información adicional: </label>
+                    <textarea name="textarea" id="ftextarea" cols="60" rows="12"></textarea>
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
+</main>
+
+<footer class="pie-pagina flex-colum">
+    <p class="autor">Cristo Manuel Rodríguez Rodríguez</p>
+    <p class="copyright">©️Copyright 2021, Todos los derechos reservados</p>
+
+</footer>
+
+</body>
+</html>
