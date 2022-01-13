@@ -64,7 +64,7 @@ h2 {
     padding: 0 2em;
 }
 
-.redes-sociales-sup > a > img {
+.redes-sociales-sup > a > figure > img {
     filter: invert(50%);
     height: 5em;
 }
@@ -288,3 +288,27 @@ h2 {
     text-align: center;
 }
 
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    display: none;
+    transition: all .5s;
+    animation: anima-color 1s linear infinite;
+}
+
+figure:hover > figcaption {
+    display: block;
+    transition: all .5s;
+}
+
+@keyframes anima-color {
+    0% {
+        background-color: yellow
+    }
+    100% {
+        background-color: #5a9bf0
+    }
+}

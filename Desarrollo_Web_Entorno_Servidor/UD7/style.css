@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.header {
+    display: flex;
+    height: 15em;
+    align-items: center;
+    justify-content: center;
+    background: url("./mapa.jpg");
+}
+
+.header h1 {
+    color: white;
+    font: bold 5em 'Arial';
+    text-shadow: 2px 2px 2px #1C6EA4;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+    min-height: 80vh;
+}
+
+.tabla-paises {
+    padding: 1em;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 15px 5px #00000072;
+    width: 70%;
+    min-height: 80%;
+}
+
+:is(.tabla-paises) td, th {
+    border: 1px solid black;
+    padding: 0.3em;
+    text-align: center;
+    font: 1em 'Verdana';
+}
+
+.tabla-paises th {
+    background-color: #87a7e1;
+}
+
+.tabla-paises tr:nth-child(even) {
+    background-color: #c9c7c7;
+}
+
+.tabla-paises tr:nth-child(odd) {
+    background-color: #FFFFFFFF;
+}
+
+.footer {
+    background-color: #081937;
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
