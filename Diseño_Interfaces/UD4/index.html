@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/jquery.sweet-modal.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Plugins JQuery</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="title-header"></h1>
+</header>
+<main class="main">
+    <!-- Plugin SweetModal -->
+    <h2 class="title-plugin">Plugin SweetModal</h2>
+    <div class="contenedor-cajas">
+        <div class="caja1"><p>Completado</p></div>
+        <div class="caja2"><p>Aviso</p></div>
+        <div class="caja3"><p>Alerta</p></div>
+        <div class="caja4"><p>Confirmación</p></div>
+        <div class="caja5"><p>YouTube</p></div>
+    </div>
+    <script src="./js/jquery.sweet-modal.min.js"></script>
+    <script>
+        document.querySelector('.caja1').addEventListener('click', function (e) {
+            $.sweetModal({
+                content: 'This is a success.',
+                icon: $.sweetModal.ICON_SUCCESS
+            });
+        });
+        document.querySelector('.caja2').addEventListener('click', function (e) {
+            $.sweetModal('Esto es una alerta');
+        });
+        document.querySelector('.caja3').addEventListener('click', function (e) {
+            $.sweetModal({
+                content: 'Esto es una alerta',
+                icon: $.sweetModal.ICON_WARNING
+            });
+        });
+        document.querySelector('.caja4').addEventListener('click', function (e) {
+            $.sweetModal.confirm('¿Quieres confirmar?', function () {
+                $.sweetModal('¡Lo has confirmado!');
+            });
+        });
+        document.querySelector('.caja5').addEventListener('click', function (e) {
+            $.sweetModal({
+                title: 'Ejemplo de un vídeo',
+                content: 'https://www.youtube.com/watch?v=gocwRvLhDf8',
+                theme: $.sweetModal.THEME_LIGHT
+            });
+        });
+    </script>
+
+    <!-- Pluging Magnific Popup -->
+    <h2 class="title-plugin">Plugin Magnific Popup</h2>
+    <div class="contenedor-cajas">
+        <div class="img"><a href="./img/img1.jpg"><img src="./img/img1.jpg"></a></div>
+        <div class="img"><a href="./img/img2.jpg"><img src="./img/img2.jpg"></a></div>
+        <div class="img"><a href="./img/img3.jpg"><img src="./img/img3.jpg"></a></div>
+        <div class="img"><a href="./img/img4.jpg"><img src="./img/img4.jpg"></a></div>
+        <div class="img"><a href="./img/img5.jpg"><img src="./img/img5.jpg"></a></div>
+    </div>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.img a').magnificPopup({
+                type: 'image'
+            });
+        });
+    </script>
+
+    <!-- Pluging Ion.RangeSlider -->
+    <h2 class="title-plugin">Plugin Ion.RangeSlider</h2>
+    <input type="text" id="example_id" name="example_name" value=""/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script>
+        $("#example_id").ionRangeSlider();
+    </script>
+</main>
+
+
+</body>
+</html>
