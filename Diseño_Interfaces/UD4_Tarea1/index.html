@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fadeOut demo</title>
+    <style>
+        p {
+            font-size: 150%;
+            cursor: pointer;
+        }
+
+        h4 {
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<h4>Sobre el párrafo, si haces clic aparece el párrafo si está oculto</h4>
+<p>If you click on this paragraph you'll see it just fade away.</p>
+<h4>Debajo del párrafo, si haces clic aparece el párrafo si está oculto</h4>
+<script>
+    $("h4").click(function () {
+        $("p").fadeIn(600);
+    });
+
+    $("p").click(function () {
+        $("p").fadeOut(600);
+    });
+</script>
+</body>
+</html>
