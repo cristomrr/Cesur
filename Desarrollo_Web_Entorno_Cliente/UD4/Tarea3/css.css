@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Neonderthaw&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #6b8293;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tabla-paises {
+    height: 10em;
+    width: 40em;
+    background-color: #ececec;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10em;
+}
+
+.tabla-paises caption {
+    font: bold 3rem black;
+    font-family: 'Neonderthaw', cursive, sans-serif;
+}
+
+:is(.tabla-paises) > tr, th, td {
+    border: 1px solid black;
+}
+
+tr td:first-child {
+    font-weight: bold;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    color: #ececec;
+    background-color: #0b0b0b;
+    width: 100%;
+
+}
