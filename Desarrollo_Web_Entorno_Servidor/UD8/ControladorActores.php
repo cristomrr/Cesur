@@ -1,7 +1,5 @@
 <?php
 
-use JetBrains\PhpStorm\NoReturn;
-
 require_once './vista/Header.php';
 require_once './vista/Footer.php';
 require_once './vista/Main.php';
@@ -57,18 +55,18 @@ abstract class ControladorActores
         Footer::home();
     }
 
-    public static function vistaInfoActorID($id)
-    {
-        $_POST['actores'] = self::$db->actoresSeasonId($id);
-        require_once './vista/info_actor.php';
-    }
-
     public static function vistaError($mensaje)
     {
         Header::home();
         Main::error($mensaje);
         Footer::home();
         die();
+    }
+
+    public static function vistaInfoActorID($id)
+    {
+        $_POST['actores'] = self::$db->actoresSeasonId($id);
+        require_once './vista/info_actor.php';
     }
 }
 

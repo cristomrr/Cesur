@@ -37,7 +37,6 @@ abstract class Main
                 <input type='text' name='pag' value='$texto' class='letrero'>
             </form>";
         }
-
         echo "</section>
                 </div>
                 </main>";
@@ -85,7 +84,8 @@ abstract class Main
     {
         $totalResultados = count($datos);
         echo "<main class='main'>
-                    <h2>Información de los personajes de la serie. Resultados $totalResultados de nº episodio $episodio</h2>
+                    <h2>Información de los personajes de la serie. Resultados 
+                    $totalResultados de nº episodio $episodio</h2>
                    <section class='flex-center form'>
                        <form action='./app.php' method='post' class='busqueda flex-center'>
                            <label for='nepi'>Buscar por episodio</label>
@@ -94,7 +94,6 @@ abstract class Main
         for ($i = 1; $i < 11; $i++) {
             echo "<option value='E$i'>$i</option>";
         }
-
         echo "                 </select>
                             <input type='submit' value='Buscar' class='btn-buscar'>
                        </form>
@@ -125,7 +124,6 @@ abstract class Main
                     </section>
                     </div>
                     </main>";
-
     }
 
     public static function error($mensaje)
@@ -134,9 +132,9 @@ abstract class Main
                 <h2>¡¡Ha habido un error!!</h2>
                 <div class='secciones  flex-center'>
                     <section class='opciones  flex-center'>
-                        <form action='' method='post'>
+                        <form action='' method='post' id='form-error' class='flex-center'>
                             <input type='image' src='./images/error.png' alt='Submit'>
-                            <input type='text' name='pag' value='$mensaje' class='letrero'>
+                            <input type='text' name='pag' value='$mensaje' class='letrero' id='error'>
                         </form>
                     </section>
                 </div>
