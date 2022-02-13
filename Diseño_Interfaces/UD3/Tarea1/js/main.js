@@ -47,7 +47,7 @@
     ];
 
     for (let i = 0, lenCantantes = cantantes.length; i < lenCantantes; i++) {
-        cantantes[i].addEventListener('click', (e) => {
+        cantantes[i].addEventListener('click', () => {
             if (infoCantante.classList.contains('info-oculto'))
                 infoCantante.classList.toggle('info-oculto');
             nombreCantante.innerHTML = nombresCantantes[i];
