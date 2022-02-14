@@ -5,9 +5,9 @@
 <nav>
   <input type="image" src="./img/logo.png" alt="Menú de inicio" />
   <div class="links">
-    <Buttom link="https://developer.mozilla.org/en-US/docs/Web" name="MDN" />
-    <Buttom link="https://svelte.dev/" name="Svelte" />
-    <Buttom link="https://jsonplaceholder.typicode.com/" name="JSONPlaceholder" />
+    <Buttom href="https://developer.mozilla.org/en-US/docs/Web" name="MDN" />
+    <Buttom href="https://svelte.dev/" name="Svelte" />
+    <Buttom href="https://jsonplaceholder.typicode.com/" name="JSONPlaceholder" />
   </div>
 </nav>
 

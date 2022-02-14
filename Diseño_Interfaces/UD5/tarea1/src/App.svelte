@@ -1,4 +1,5 @@
 <script>
+  import SeccionContacto from "./components/SeccionContacto.svelte";
   import Footer from "./components/Footer.svelte";
   import SeccionVideos from "./components/SeccionVideos.svelte";
   import SeccionGaleria from "./components/SeccionGaleria.svelte";
@@ -29,11 +30,21 @@
   </p>
   <TitleSeccion title="Sección de vídeos compartidos" />
   <SeccionVideos />
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores doloremque molestiae dolore natus dolor architecto rem odit nesciunt recusandae dolorem expedita, provident exercitationem quae, nam ut, nemo perspiciatis cupiditate!
-  Pariatur velit minima harum vel laborum provident nulla, dolore ab omnis assumenda est quae nesciunt tempore sapiente itaque aut sint ea maiores cum! Fuga deleniti ipsam dolor harum voluptates iste.
-  Molestiae temporibus cumque tempore voluptates inventore, voluptatibus et ex expedita quae deleniti distinctio nulla, mollitia harum minus consequatur optio eaque repellat tenetur laborum consectetur sint nesciunt sunt. Voluptatibus, omnis in.
-  Ad sit quae voluptatem veniam, unde saepe dolores, consequatur pariatur sed adipisci eius ratione tenetur veritatis repellat similique! Minima esse eligendi amet quo cum tenetur assumenda aliquid iste adipisci voluptatum?
-  Totam doloremque nemo aliquam suscipit quod rerum sed, doloribus necessitatibus porro assumenda! Nesciunt, similique! Ipsam assumenda nisi quae, asperiores debitis quidem. Sunt quae provident veniam ipsum molestiae, esse officiis error?</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores doloremque molestiae dolore natus dolor
+    architecto rem odit nesciunt recusandae dolorem expedita, provident exercitationem quae, nam ut, nemo perspiciatis
+    cupiditate! Pariatur velit minima harum vel laborum provident nulla, dolore ab omnis assumenda est quae nesciunt
+    tempore sapiente itaque aut sint ea maiores cum! Fuga deleniti ipsam dolor harum voluptates iste. Molestiae
+    temporibus cumque tempore voluptates inventore, voluptatibus et ex expedita quae deleniti distinctio nulla, mollitia
+    harum minus consequatur optio eaque repellat tenetur laborum consectetur sint nesciunt sunt. Voluptatibus, omnis in.
+    Ad sit quae voluptatem veniam, unde saepe dolores, consequatur pariatur sed adipisci eius ratione tenetur veritatis
+    repellat similique! Minima esse eligendi amet quo cum tenetur assumenda aliquid iste adipisci voluptatum? Totam
+    doloremque nemo aliquam suscipit quod rerum sed, doloribus necessitatibus porro assumenda! Nesciunt, similique!
+    Ipsam assumenda nisi quae, asperiores debitis quidem. Sunt quae provident veniam ipsum molestiae, esse officiis
+    error?
+  </p>
+  <TitleSeccion title="Formulario de registro" />
+  <SeccionContacto />
 </main>
 <Footer />
 
@@ -47,6 +58,9 @@
 
   main {
     padding: 0 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   p {
