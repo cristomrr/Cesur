@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./script.js"></script>
+        <title>Api el tiempo ciudades</title>
+    </head>
+
+    <body class="flex-colum">
+        <header class="flex-colum">
+            <h1 id="title">EL tiempo en las ciudades del mundo</h1>
+        </header>
+        <main>
+            <section class="flex-center">
+                <h2>Datos meteorológicos</h2>
+                <div class="method">
+                    <label for="fetch"><input type="radio" name="method" id="fetch" selected>Fetch</label>
+                    <label for="xmlrequest"><input type="radio" name="method" id="xmlrequest">XMLRequest</label>
+                </div>
+                <select name="country" id="country">
+                    <option value="title" selected hidden disabled>Elige país</option>
+                    <option value="Málaga">Málaga</option>
+                    <option value="Londres">Londres</option>
+                    <option value="New York">New York</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Berlín">Berlín</option>
+                </select>
+                <div id="datos">
+                    <p>Descripción: <span id="state"></span></p>
+                    <p>Temperatura: <span id="temp"></span></p>
+                    <p>Temperatura min: <span id="tempmin"></span></p>
+                    <p>Temperatura max: <span id="tempmax"></span></p>
+                    <p>Presión: <span id="pressure"></span></p>
+                    <p>Humedad: <span id="humidity"></span></p>
+                </div>
+            </section>
+        </main>
+        <footer class="flex-colum">
+            <p class="autor">Cristo Manuel Rodríguez Rodríguez ©️</p>
+        </footer>
+    </body>
+
+</html>
