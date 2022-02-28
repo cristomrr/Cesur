@@ -8,3 +8,11 @@
     alert(mensaje_titulares);
     console.log(mensaje_titulares);
 }(document));
+
+let a = 3
+  b=2
+c=a+b
+
+console.log(c) //?
+
+

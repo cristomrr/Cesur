@@ -59,12 +59,10 @@ function xmlrequestWeather(city) {
 // EVENTO SOLICITUD DATOS ------------------------------------------------------------
 
 selectCountry.addEventListener("change", function () {
-  if (this.value !== "title") {
-    if (optionFetch.checked) {
-      fetchWeather(this.value);
-    } else if (optionXMLRequest.checked) {
-      xmlrequestWeather(this.value);
-    }
+  if (optionFetch.checked) {
+    fetchWeather(this.value);
+  } else if (optionXMLRequest.checked) {
+    xmlrequestWeather(this.value);
   }
 });
 
