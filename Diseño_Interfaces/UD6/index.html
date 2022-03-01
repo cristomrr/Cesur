@@ -1,27 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav></nav>
-        <h1></h1>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Autobuces Guananero</title>
+  </head>
+
+  <body>
+    <header class="hdr">
+      <nav class="hdr-nav-sup">
+        <div class="ns-logo">
+          <a href="#" alt="Logo, vuelta al menú de inicio">
+            <img class="logo" src="./img/logo2.png" alt="Logo de Guaguanero">
+          </a>
+        </div>
+        <div class="ns-user">
+          <p class="signup">Registrarse</p>
+          <p class="signin-out">Iniciar sesión</p>
+          <a href="#" class="avatar">
+            <img src="./img/avatar.svg" alt="Avatar usuario">
+          </a>
+        </div>
+      </nav>
+      <div class="hdr-title">
+        <h1>Autobuces entre provincias de España Guaguanero</h1>
+        <h2>Te llevamos donde otros no llegan..🚌</h2>
+      </div>
+      <nav class="hdr-nav-bottom">
+        <p class="lines">Líneas de autobuces:</p>
+        <a href="" class="line">100</a>
+        <a href="" class="line">110</a>
+        <a href="" class="line">120</a>
+        <a href="" class="line">130</a>
+        <a href="" class="line">140</a>
+        <button class="nav-close">Cerrar</button>
+      </nav>
     </header>
     <main>
-        <aside>
-            <div class="route"></div>
-            <div class="info"></div>
-        </aside>
-        <section class="s-option"></section>
-        <section class="s-news"></section>
+      <div class="line-mobile">
+        <button class="btn-show-lines">Líneas de autobuces:</button>
+      </div>
+      <div class="alert">
+        <p><span>Medidas Covid: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, recusandae minima
+          ipsum quo eius laudantium
+          libero odit. Atque quas sed doloremque, vero facere reiciendis, sunt qui commodi dignissimos nulla odit.
+        </p>
+        <a href="#">Más información de medidas anti-covid</a>
+      </div>
+      <section class="s-search-route">
+        <div class="sr-title">
+          <img src="./img/search.svg" alt="lupa de búsqueda" class="search">
+          <h2>Buscar líneas según la ruta deseada:</h2>
+        </div>
+        <form action="#" method="get" class="form-route">
+          <div class="f-data">
+            <label for="from">Desde:
+              <input type="text" id="from">
+            </label>
+            <button class="f-change">
+              <img src="./img/arrow.svg" alt="Camiar orden del trayecto ingresado desde hasta">
+            </button>
+            <label for="to">Hasta:
+              <input type="text" id="to">
+            </label>
+          </div>
+          <input type="submit" value="Buscar línea">
+        </form>
+      </section>
+      <section class="su-comming">
+        <p class="news hiden">Guaguas que pasan pronto por tu zona</p>
+      </section>
+      <section class="s-cards">
+        <h2 class="sc-title">Información</h2>
+        <div class="cards">
+          <button class="card">
+            <img src="./img/card.jpg" alt="Tarjeta de socio">
+            <p>Tarjeta cliente</p>
+          </button>
+          <button class="card">
+            <img src="./img/megafono.jpg" alt="Avisos de tráfico">
+            <p>Avisos de tráfico</p>
+          </button>
+          <button class="card">
+            <img src="./img/ticket.jpg" alt="Tarifas">
+            <p>Nuestras tarifas</p>
+          </button>
+          <button class="card">
+            <img src="./img/map.jpg" alt="Mapa">
+            <p>Mapa de España</p>
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
-        <p class="about"></p>
+      <p class="about">Guaguanero es una marca registrada precedente de Canarias</p>
+      <a class="privacy">Más información sobre nuestra política de privacidad</a>
+      <div class="contact">
+        <p class="adress"><span>Contacto: </span>Calle los molinos 46, Albacete</p>
+        <p class="tfn"><span>Teléfono: </span>925 98 76 87</p>
+        <p class="fax"><span>Fax: </span>925 98 76 88</p>
+      </div>
     </footer>
-</body>
+  </body>
+
 </html>
