@@ -31,11 +31,11 @@
       </div>
       <nav class="hdr-nav-bottom">
         <p class="lines">Líneas de autobuces:</p>
-        <a href="" class="line">100</a>
-        <a href="" class="line">110</a>
-        <a href="" class="line">120</a>
-        <a href="" class="line">130</a>
-        <a href="" class="line">140</a>
+        <a href="#" class="line">100</a>
+        <a href="#" class="line">110</a>
+        <a href="#" class="line">120</a>
+        <a href="#" class="line">130</a>
+        <a href="#" class="line">140</a>
         <button class="nav-close">Cerrar</button>
       </nav>
     </header>
@@ -53,9 +53,9 @@
       <section class="s-search-route">
         <div class="sr-title">
           <img src="./img/search.svg" alt="lupa de búsqueda" class="search">
-          <h2>Buscar líneas según la ruta deseada:</h2>
+          <h2>Buscar líneas y horarios según la ruta deseada:</h2>
         </div>
-        <form action="#" method="get" class="form-route">
+        <div class="form-route">
           <div class="f-data">
             <label for="from">Desde:
               <input type="text" id="from">
@@ -68,42 +68,49 @@
             </label>
           </div>
           <input type="submit" value="Buscar línea">
-        </form>
+        </div>
       </section>
       <section class="su-comming">
         <p class="news hiden">Guaguas que pasan pronto por tu zona</p>
       </section>
       <section class="s-cards">
-        <h2 class="sc-title">Información</h2>
+        <h2 class="sc-title">Información de interés</h2>
         <div class="cards">
-          <button class="card">
+          <button class="card client">
             <img src="./img/card.jpg" alt="Tarjeta de socio">
-            <p>Tarjeta cliente</p>
+            <a href="https://www.tarjeta-cliente.com/" target="_blank">Tarjeta cliente</a>
           </button>
-          <button class="card">
+          <button class="card trafic">
             <img src="./img/megafono.jpg" alt="Avisos de tráfico">
-            <p>Avisos de tráfico</p>
+            <a href="https://www.dgt.es/conoce-el-estado-del-trafico/informacion-e-incidencias-de-trafico/"
+              target="_blank">Avisos de tráfico</a>
           </button>
-          <button class="card">
+          <button class="card prices">
             <img src="./img/ticket.jpg" alt="Tarifas">
-            <p>Nuestras tarifas</p>
+            <a href="https://www.comparabus.com/es/" target="_blank">Comparar tarifas</a>
           </button>
-          <button class="card">
+          <button class="card map">
             <img src="./img/map.jpg" alt="Mapa">
-            <p>Mapa de España</p>
+            <a href="https://www.google.es/maps/place/Espa%C3%B1a/@40.1296703,-8.2144269,6z/data=!3m1!4b1!4m5!3m4!1s0xc42e3783261bc8b:0xa6ec2c940768a3ec!8m2!3d40.463667!4d-3.74922"
+              target="_blank">Mapa de España</a>
           </button>
         </div>
       </section>
     </main>
     <footer>
       <p class="about">Guaguanero es una marca registrada precedente de Canarias</p>
-      <a class="privacy">Más información sobre nuestra política de privacidad</a>
+      <a href="#" class="privacy">Más información sobre nuestra política de privacidad</a>
       <div class="contact">
         <p class="adress"><span>Contacto: </span>Calle los molinos 46, Albacete</p>
         <p class="tfn"><span>Teléfono: </span>925 98 76 87</p>
         <p class="fax"><span>Fax: </span>925 98 76 88</p>
       </div>
     </footer>
+    <div class="msg-emergent hiden">
+      <div class="me-window">
+        <button>Cerrar</button>
+      </div>
+    </div>
   </body>
 
 </html>
